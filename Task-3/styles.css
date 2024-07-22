@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-image: url(temperature\ image.jpg);
+}
+.container{
+    border: 3px solid rgb(37, 42, 51);
+    width: 50%;
+    height: 50%;
+    padding: 12px 24px;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(110deg,#333232,rgb(184, 164, 160),rgb(238, 232, 229));
+    box-shadow: 10px 10px 2px #b1b1b1;  /*box shadow syntax||  
+                                           box-shadow:h-offset v-offset blur color */
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container h2{
+    font-family: "Marmelad", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: rgb(51, 78, 51);
+    background-color: linear-gradient(60deg,rgb(223, 14, 160),rgb(235, 216, 47),rgb(226, 19, 19));
+}
+
+#temperature-icon{
+    font-size: 40px;
+    color: #fff;
+    
+}
+#temperature-icon i{
+    display: flex;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#celsius,#fahrenheit,#kelvin{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 8px 2px;
+    padding: 6px 12px;
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 8px;
+    flex: 5;
+    height: 40px;
+    font-size: 22px;
+    color: #888383;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+input:hover{
+    transform: scale(0.96);
+}
+
+label{
+    font-size: 23px;
+    color: rgb(21, 53, 53);
+    margin-left: 50px;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+}
+h2{
+    font-size: 1.6em;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    color: rgb(168, 68, 93);
+    margin: 10px 0;
+}
+
+.result{
+    height: 35px;
+    width: 100px;
+    margin: auto;
+}
+
+.result .btn{
+    width: 100px;
+    height: 30px;
+    color: #050505;
+    border: 2px solid rgb(49, 98, 155);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 11px;
+    justify-content: center;
+}
+
+.result .btn:hover{
+    background: #010101;
+    color: rgb(247, 240, 240);
+    transform: scale(1.2) /*ease*/;
+    transition: 0.5s ease-out;
+}
